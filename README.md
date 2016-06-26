@@ -9,3 +9,11 @@ Run `grunt` for building and `grunt serve` for preview.
 ## Testing
 
 Running `grunt test` will run the unit tests with karma.
+
+## Install
+
+Run 'npm install' && 'bower install'
+
+Yeoman API:
+
+https://github.com/yeoman/generator-angular#readme
