@@ -16,6 +16,6 @@ angular.module('barbershopApp')
         //   '<div class=pillar-box> Test </div>'
         // )
       },
-      templateUrl: 'views/pillar_box.html'
+      templateUrl: 'scripts/directives/partials/pillar_box.html'
     };
   });
