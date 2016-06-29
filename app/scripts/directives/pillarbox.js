@@ -7,15 +7,12 @@
  * # pillarBox
  */
 angular.module('barbershopApp')
-  .directive('pillarBox', function () {
+  .directive('pillarBox', function(PartialsPath) {
     return {
-      // template: '<div></div>',
       restrict: 'E',
-      link: function postLink(scope, element, attrs) {
-        // element.append(
-        //   '<div class=pillar-box> Test </div>'
-        // )
-      },
-      templateUrl: 'scripts/directives/partials/pillar_box.html'
+      templateUrl: PartialsPath + 'pillar_box.html',
+      controllerAs: 'pillarBoxCtrl',
+      controller: function postLink($scope, $element) {
+      }
     };
   });
