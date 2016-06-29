@@ -9,10 +9,13 @@
 angular.module('barbershopApp')
   .directive('pillarBox', function () {
     return {
-      template: '<div></div>',
+      // template: '<div></div>',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
-        element.text('this is the pillarBox directive');
-      }
+        // element.append(
+        //   '<div class=pillar-box> Test </div>'
+        // )
+      },
+      templateUrl: 'views/pillar_box.html'
     };
   });
