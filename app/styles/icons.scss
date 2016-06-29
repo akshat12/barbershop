@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'barbershop-icons';
+    src: url('../fonts/barbershop_icons.eot?qswbrw');
+    src: url('../fonts/barbershop_icons.eot?qswbrw#iefix') format('embedded-opentype'),
+        url('../fonts/barbershop_icons.ttf?qswbrw') format('truetype'),
+        url('../fonts/barbershop_icons.woff?qswbrw') format('woff'),
+        url('../fonts/barbershop_icons.svg?qswbrw#barbershop_icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'barbershop-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon-facebook:before {
+    content: "\e900";
+}
+.icon-icon-feature1:before {
+    content: "\e901";
+}
+.icon-icon-feature2:before {
+    content: "\e902";
+}
+.icon-icon-feature3:before {
+    content: "\e903";
+}
+.icon-icon-tumblr:before {
+    content: "\e904";
+}
+.icon-icon-twitter:before {
+    content: "\e905";
+}
+
+
