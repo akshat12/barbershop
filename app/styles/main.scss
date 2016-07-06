@@ -45,6 +45,10 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
+.container-fluid {
+  padding: 0px;
+}
+
 .container-narrow > hr {
   margin: 30px 0;
 }
@@ -92,14 +96,13 @@ body {
   }
 }
 
-.navbar-brand {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    margin:0 auto;
+.banner {
+  background: url('/images/banner-background.png');
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.navbar-toggle {
-    z-index:3;
+.callout-text > h1 {
+  padding-left: 5%;
+  padding-right: 5%;
 }
