@@ -56,7 +56,6 @@ $colHighlight: map-get($colors, white);
     .navbar-nav {
         > li {
             > a {
-                text-transform: uppercase;
                 color: $colDefault;
                 font-family: $font-stack;
                     &:hover,  &:focus {

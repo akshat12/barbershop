@@ -5,47 +5,52 @@
 $font-stack: Lato, sans-serif;
 
 $colors:(
-	primary: #ffb139,
-	black: #2f2f2f,
-	grey: #7c7c7c,
-	white: #f3f3f3
+    primary: #ffb139,
+    black: #2f2f2f,
+    grey: #7c7c7c,
+    white: #f3f3f3
 );
 
 // Header styles
 h1 {
-	font-family: $font-stack;
-	line-height: 125%;
-	font-weight: 700;
-	font-size: 56px;
-	color: map-get($colors, white);
+    font-family: $font-stack;
+    line-height: 125%;
+    font-weight: 700;
+    font-size: 56px;
+    color: map-get($colors, white);
 }
 
 h2 {
-	font-family: $font-stack;
-	line-height: 125%;
-	font-weight: 700;
-	font-size: 44px;
-	color: map-get($colors, black);
+    font-family: $font-stack;
+    line-height: 125%;
+    font-weight: 700;
+    font-size: 44px;
+    color: map-get($colors, black);
 }
 
 h3 {
-	font-family: $font-stack;
-	line-height: 125%;
-	font-weight: 400;
-	font-size: 21px;
-	color: map-get($colors, black);
+    font-family: $font-stack;
+    line-height: 125%;
+    font-weight: 400;
+    font-size: 21px;
+    color: map-get($colors, black);
 }
 
 h4 {
-	font-family: $font-stack;
-	line-height: 150%;
-	font-weight: 400;
-	font-size: 16px;
-	letter-spacing: 2px;
-	color: map-get($colors, grey);
+    font-family: $font-stack;
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: map-get($colors, grey);
 }
 
 // Navbar links
 .navbar-default .navbar-nav > li > a {
-	color: map-get($colors, white);
+    color: map-get($colors, white);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 2px;
+
 }
