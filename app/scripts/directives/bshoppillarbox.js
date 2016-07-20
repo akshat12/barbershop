@@ -7,11 +7,11 @@
  * # pillarBox
  */
 angular.module('barbershopApp')
-  .directive('pillarBox', function(PartialsPath) {
+  .directive('bshopPillarBox', function(PartialsPath) {
     return {
       restrict: 'E',
-      templateUrl: PartialsPath + 'pillar_box.html',
-      controllerAs: 'ctrl',
+      templateUrl: PartialsPath + 'bshop_pillar_box.html',
+      controllerAs: 'pillarBoxCtrl',
       controller: function postLink($scope, $element) {
       }
     };
