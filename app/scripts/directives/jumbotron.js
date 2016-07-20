@@ -2,16 +2,16 @@
 
 /**
  * @ngdoc directive
- * @name barbershopApp.directive:pillarBox
+ * @name barbershopApp.directive:jumbotron
  * @description
- * # pillarBox
+ * # jumbotron
  */
 angular.module('barbershopApp')
-  .directive('pillarBox', function(PartialsPath) {
+  .directive('jumbotron', function (PartialsPath) {
     return {
       restrict: 'E',
-      templateUrl: PartialsPath + 'pillar_box.html',
-      controllerAs: 'ctrl',
+      templateUrl: PartialsPath + 'jumbotron.html',
+      controllerAs: 'jumbotronCtrl',
       controller: function postLink($scope, $element) {
       }
     };
