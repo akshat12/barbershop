@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-angular
+var module = angular
   .module('barbershopApp', [
     'ngRoute'
   ])
@@ -23,3 +23,5 @@ angular
         redirectTo: '/'
       });
   });
+
+module.constant('PartialsPath', '/scripts/directives/partials/');
