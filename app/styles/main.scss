@@ -152,13 +152,30 @@ body {
 /* End of email subscribe css */
 
 /* Pillar box CSS */
-
+.icon {
+  color: #f3f3f3;
+  font-size: 20px;
+}
 .pillar-box-container {
   border-top: 1px solid #7c7c7c;
 }
 
 .pillar-box > h3 {
   color: #7c7c7c;
+  padding-top: 15px;
+}
+
+.pillar-box-column {
+  width: 23.3333%;
+  float: left;
+}
+
+.pillar-box-column:first-of-type {
+  margin-left: 10%;
+}
+
+.pillar-box-column:last-child {
+  margin-right: 10%;
 }
 
 /* End of Pillar box CSS */
