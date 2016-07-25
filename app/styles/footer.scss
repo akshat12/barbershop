@@ -1,0 +1,25 @@
+// navbar.scss - custom navbar styles
+@import 'shared';
+
+footer {
+  background: lightgrey;
+  height: 11em;
+}
+
+.logo-footer {
+  background: url('/images/logo-black@0.5x.png');
+  background-repeat: no-repeat;
+}
+
+
+.navbar-brand-footer {
+  width: 315px;
+  position: absolute;
+  height: 300px;
+  transform: translateX(25%);
+}
+
+.navbar-brand-footer {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
