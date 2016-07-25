@@ -153,6 +153,9 @@ body {
 
 /* Pillar box CSS */
 
+.pillar-box-container {
+  margin-bottom: 0;
+}
 .pillar-row {
   padding-top: 15px;
 }
@@ -162,6 +165,17 @@ body {
 }
 .pillar-box-container {
   border-top: 1px solid #7c7c7c;
+
+}
+
+.pillar-box {
+  color: #7c7c7c;
+  height: 100%;
+}
+
+.pillar-box:hover {
+  color: #f3f3f3;
+  border-bottom: 2px solid #ffb139;
 }
 
 .pillar-box > h3 {
@@ -171,18 +185,11 @@ body {
   line-height: 1.5;
 }
 
-.pillar-box {
-  color: #7c7c7c;
-}
-
-.pillar-box:hover {
-  color: #f3f3f3;
-  border-bottom: 2px solid #ffb139;
-}
 
 .pillar-box-column {
   width: 23.3333%;
   float: left;
+  height: 150px;
 }
 
 .pillar-box-column:first-of-type {
