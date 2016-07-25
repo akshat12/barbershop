@@ -98,8 +98,6 @@ body {
 
 .banner {
   background: url('/images/banner-background.png');
-  padding-left: 5%;
-  padding-right: 5%;
 }
 
 .callout-text > h1 {
@@ -111,6 +109,31 @@ body {
 
 .email-subscribe {
   padding-bottom: 30px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px; 
+}
+
+.email-input {
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  height: 3.5em;
+  background-color: #f3f3f3;
+  border-color: #f3f3f3;
+}
+
+.subscribe-span {
+  width: 40%;
+}
+
+.subscribe-button {
+  width: 100%;
+  background-color: #ffb139;
+  height: 3.5em;
+  border-color: #ffb139;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
 }
 
 /* End of email subscribe css */
@@ -118,8 +141,7 @@ body {
 /* Pillar box CSS */
 
 .pillar-box-container {
-  padding-top: 20px;
-  border-top: 1px solid #2f2f2f;
+  border-top: 1px solid #7c7c7c;
 }
 
 .pillar-box > h3 {
