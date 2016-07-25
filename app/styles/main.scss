@@ -152,8 +152,12 @@ body {
 /* End of email subscribe css */
 
 /* Pillar box CSS */
+
+.pillar-row {
+  padding-top: 15px;
+}
 .icon {
-  color: #f3f3f3;
+  color: inherit;
   font-size: 20px;
 }
 .pillar-box-container {
@@ -161,8 +165,19 @@ body {
 }
 
 .pillar-box > h3 {
+  color: inherit;
+  font-size: 16px;
+  font-family: Lato;
+  line-height: 1.5;
+}
+
+.pillar-box {
   color: #7c7c7c;
-  padding-top: 15px;
+}
+
+.pillar-box:hover {
+  color: #f3f3f3;
+  border-bottom: 2px solid #ffb139;
 }
 
 .pillar-box-column {
@@ -171,11 +186,11 @@ body {
 }
 
 .pillar-box-column:first-of-type {
-  margin-left: 10%;
+  margin-left: 15%;
 }
 
 .pillar-box-column:last-child {
-  margin-right: 10%;
+  margin:0;
 }
 
 /* End of Pillar box CSS */
