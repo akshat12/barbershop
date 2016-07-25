@@ -1,0 +1,88 @@
+// shared.scss
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+// Variables
+$font-stack: Lato, sans-serif;
+
+$colors:(
+    primary: #ffb139,
+    black: #2f2f2f,
+    grey: #7c7c7c,
+    white: #f3f3f3
+);
+
+// Header styles
+h1 {
+    font-family: $font-stack;
+    line-height: 125%;
+    font-weight: 700;
+    font-size: 56px;
+    color: map-get($colors, white);
+}
+
+h2 {
+    font-family: $font-stack;
+    line-height: 125%;
+    font-weight: 700;
+    font-size: 44px;
+    color: map-get($colors, black);
+}
+
+h3 {
+    font-family: $font-stack;
+    line-height: 125%;
+    font-weight: 400;
+    font-size: 21px;
+    color: map-get($colors, black);
+}
+
+h4 {
+    font-family: $font-stack;
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: map-get($colors, grey);
+}
+
+// Navbar links
+.navbar-default .navbar-nav > li > a {
+    color: map-get($colors, white);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 2px;
+
+}
+
+.default-button {
+    color:map-get($colors,white);
+    background-color: map-get($colors, primary);
+    text-transform: uppercase;
+    border-radius: 40px;
+    box-shadow: 0px 15px 15px rgba(0,0,0,.20);
+    font-family:Lato, sans-serif;
+    font-size:16px;
+    letter-spacing: 2px;
+    font-weight:bold;
+    height: 3.3em;
+    margin:10px;
+    width:250px;
+}
+
+.default-button:hover{
+    color:map-get($colors,white);
+}
+
+.default-input[type=text]{
+    padding-left: 30px;
+    height: 3.3em;
+    background-color: map-get($colors, white); 
+    border-radius: 40px;
+    font-family:Lato, sans-serif;
+    color: map-get($colors, grey);
+    font-size:16px;
+    border:none;
+    margin:10px;
+    width:250px;
+}

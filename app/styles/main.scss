@@ -3,6 +3,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+@import 'icons';
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -41,6 +43,10 @@ body {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+}
+
+.container-fluid {
+  padding: 0px;
 }
 
 .container-narrow > hr {
@@ -89,3 +95,116 @@ body {
     border-bottom: 0;
   }
 }
+
+.banner {
+  background: url('/images/banner-background.png');
+}
+
+.callout-text > h1 {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.haircut-schedule{
+  padding-top: 4.5em;
+  padding-bottom:4.5em;
+}
+
+/* Email subscribe css */
+.email-text {
+  color: #f3f3f3;
+}
+.email-subscribe {
+  padding-bottom: 30px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px; 
+}
+
+.email-input {
+  padding-left: 30px;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  height: 3.3em;
+  background-color: #f3f3f3;
+  border-color: #f3f3f3;
+  font-family: Lato, sans-serif;
+  font-size: 18px; 
+}
+
+.subscribe-span {
+  width: 40%;
+}
+
+.subscribe-button {
+  width: 100%;
+  background-color: #ffb139;
+  height: 3.3em;
+  border-color: #ffb139;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  font-size: 18px;
+  font-family: Lato, sans-serif;
+  color: #f3f3f3;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.subscribe-button:hover {
+  background-color: #ffb139;
+  border-color: #ffb139;
+  color: #f3f3f3;
+}
+
+/* End of email subscribe css */
+
+/* Pillar box CSS */
+
+.pillar-box-container {
+  margin-bottom: 0;
+}
+.pillar-row {
+  padding-top: 15px;
+}
+.icon {
+  color: inherit;
+  font-size: 20px;
+}
+.pillar-box-container {
+  border-top: 1px solid #7c7c7c;
+
+}
+
+.pillar-box {
+  color: #7c7c7c;
+  height: 100%;
+}
+
+.pillar-box:hover {
+  color: #f3f3f3;
+  border-bottom: 4px solid #ffb139;
+}
+
+.pillar-box > h3 {
+  color: inherit;
+  font-size: 16px;
+  font-family: Lato;
+  line-height: 1.5;
+}
+
+
+.pillar-box-column {
+  width: 23.3333%;
+  float: left;
+  height: 150px;
+}
+
+.pillar-box-column:first-of-type {
+  margin-left: 15%;
+}
+
+.pillar-box-column:last-child {
+  margin:0;
+}
+
+/* End of Pillar box CSS */
