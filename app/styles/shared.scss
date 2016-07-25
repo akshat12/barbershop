@@ -75,6 +75,7 @@ h4 {
 }
 
 .default-input[type=text]{
+    display:inline-block;
     padding-left: 30px;
     height: 3.3em;
     background-color: map-get($colors, white); 
