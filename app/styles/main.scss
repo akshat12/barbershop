@@ -116,11 +116,14 @@ body {
 }
 
 .email-input {
+  padding-left: 30px;
   border-top-left-radius: 2em;
   border-bottom-left-radius: 2em;
-  height: 3.5em;
+  height: 3.3em;
   background-color: #f3f3f3;
   border-color: #f3f3f3;
+  font-family: Lato, sans-serif;
+  font-size: 18px; 
 }
 
 .subscribe-span {
@@ -130,10 +133,20 @@ body {
 .subscribe-button {
   width: 100%;
   background-color: #ffb139;
-  height: 3.5em;
+  height: 3.3em;
   border-color: #ffb139;
   border-top-right-radius: 2em;
   border-bottom-right-radius: 2em;
+  font-size: 18px;
+  font-family: Lato, sans-serif;
+  color: #f3f3f3;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.subscribe-button:hover {
+  background-color: #ffb139;
+  border-color: #ffb139;
+  color: #f3f3f3;
 }
 
 /* End of email subscribe css */
