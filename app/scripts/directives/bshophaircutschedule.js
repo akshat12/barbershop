@@ -7,7 +7,7 @@
  * # bshopEmailSubscribe
  */
 angular.module('barbershopApp')
-  .directive('bshopHaircutSchedule', function (PartialsPath) {
+  .directive('bshopHaircutSchedule', function (PartialsPath, HaircutScheduleURL) {
     return {
       templateUrl: PartialsPath + 'bshop_haircut_schedule.html',
       restrict: 'E',
@@ -16,10 +16,11 @@ angular.module('barbershopApp')
         this.submitSchedule = function($event){
           $event.stopPropagation();
           $event.preventDefault();
-          $window.open("https://eastvillagebarbershop.perfectmind.com/22867/Contacts/BookMe4?widgetId=fb596abb-e1eb-4c17-b417-03d57409a0ee&embed=true");
+          $window.open(HaircutScheduleURL);
         }
       },
       bindToController: true,
       scope: {}
     };
 });
+  
