@@ -202,5 +202,30 @@ body {
   margin:0;
 }
 
+@media (max-width: 875px) {
+  .pillar-box-column {
+    height: 215px;
+  }
+}
+
+@media (max-width: 698px) {
+  .pillar-row {
+    display: inline;
+  }
+  .pillar-box-column {
+    padding-top: 20px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    float: left;
+  }
+  .pillar-box-column:first-of-type{
+    margin-left: 15%;
+  }
+  .pillar-box-column:last-child {
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+}
 /* End of Pillar box CSS */
 
