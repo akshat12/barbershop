@@ -160,6 +160,8 @@ body {
 }
 .pillar-row {
   padding-top: 15px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 .icon {
   color: inherit;
@@ -189,14 +191,12 @@ body {
 
 
 .pillar-box-column {
-  width: 23.3333%;
+  max-width: 300px;
+  width: 33.3333%;
   float: left;
   height: 150px;
 }
 
-.pillar-box-column:first-of-type {
-  margin-left: 15%;
-}
 
 .pillar-box-column:last-child {
   margin:0;
