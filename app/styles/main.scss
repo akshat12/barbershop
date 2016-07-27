@@ -212,8 +212,7 @@ body {
 /* Mobile responsive pillar CSS */
 @media (max-width: 698px) {
   .icon {
-    color: inherit;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     vertical-align: middle;
   }
@@ -228,6 +227,8 @@ body {
     float: left;
   }
   .pillar-box {
+    text-align: center;
+    vertical-align: middle;
     color: #f3f3f3;
   }
   .pillar-box:hover {
