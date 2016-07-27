@@ -5,11 +5,7 @@ angular.module('barbershopApp')
       restrict: 'E',
       controllerAs: 'locationCtrl',
       controller: function($scope, $element, NgMap) {
-        NgMap.getMap().then(function(map) {
-          console.log(map.getCenter());
-          console.log('markers', map.markers);
-          console.log('shapes', map.shapes);
-        });
+        NgMap.getMap();
       },
       bindToController: true,
       scope: {}
