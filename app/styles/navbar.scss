@@ -1,124 +1,48 @@
 // navbar.scss - custom navbar styles
 @import 'shared';
 
-.logo {
-    background: url('/images/logo.svg')
+.flex-column {
+    display: flex;
+    flex-direction: column;
 }
 
-.navbar-brand {
-  width: 215px;
-  transform: translateX(-50%);
-  left: 50%;
-  position: absolute;
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.navbar-brand,
-.navbar-nav > li > a {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    line-height: 175px;
+.navbar-left-flex {
+    width: 33.3%;
+    justify-content: center;
 }
 
-.navbar-brand {
-    height: 100%;
+.navbar-right-flex {
+    width: 33.3%;
+    justify-content: center;
 }
 
-
-@media (max-width: 767px) {
-    .navbar-nav > li > a {
-        line-height: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+.navbar-center-flex {
+    width: 33.4%;
+    justify-content: center;
 }
 
-$bgDefault: rgba(0, 0, 0, 0.0);
-$bgHighlight: rgba(0, 0, 0, 0.0);
-$colDefault: map-get($colors, white);
-$colHighlight: map-get($colors, white);
-
-.navbar-default {
-  background-color: $bgDefault;
-  border-color: $bgHighlight;
-
-    .navbar-brand {
-        color: $colDefault;
-
-        &:hover, &:focus {
-          color: $colHighlight;
-        }
-    }
-
-    .navbar-text {
-        color: $colDefault;
-    }
-
-    .navbar-nav {
-        > li {
-            > a {
-                color: $colDefault;
-                font-family: $font-stack;
-                    &:hover,  &:focus {
-                        color: $colHighlight;
-                    }
-                }
-            }
-        > .active {
-            > a, > a:hover, > a:focus {
-                color: $colHighlight;
-                font-family: $font-stack;
-                background-color: $bgHighlight;
-            }
-        }
-        > .open {
-            > a, > a:hover, > a:focus {
-                color: $colHighlight;
-                font-family: $font-stack;
-                background-color: $bgHighlight;
-            }
-        }
-    }
-
-    .navbar-toggle {
-        border-color: $bgHighlight;
-
-        &:hover, &:focus {
-            background-color: $bgHighlight;
-        }
-
-        .icon-bar {
-            background-color: $colDefault;
-        }
-    }
-
-    .navbar-collapse, .navbar-form {
-        border-color: $colDefault;
-    }
-
-    .navbar-link {
-        color: $colDefault;
-
-        &:hover {
-        color: $colHighlight;
-        }
+.nav-item-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    > a {
+        color: map-get($colors, white);
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 2px;
     }
 }
 
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu {
-        > li > a {
-            color: $colDefault;
-
-            &:hover, &:focus {
-                color: $colHighlight;
-            }
-        }
-
-        > .active {
-            > a, > a:hover, > a:focus, {
-                color: $colHighlight;
-                background-color: $bgHighlight;
-            }
-        }
+@media (max-width: 768px) {
+    .navbar-container-flex {
+        display: none;
     }
 }
