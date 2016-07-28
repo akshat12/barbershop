@@ -75,6 +75,71 @@ body {
 
 
 
+/*****************
+    FOOTER
+*******************/
+
+$grey: #f0efef;
+footer{
+        background-image: url(../images/banner-background.png);
+        color: $grey;
+}
+$logowidth: 40px;
+.twitterLogo{
+        width:$logowidth;
+        padding-right:10px;
+}
+.facebookLogo{
+        width:$logowidth;
+        padding-right:10px;
+}
+
+
+@media screen and (min-width: 960px) {
+    footer{
+        height:400px;
+    }
+    div.demo {
+        display:table;
+        width:100%;
+        max-width:1400px;
+        margin:0 auto;
+    }
+    div.demo div {
+        display:table-cell;
+        text-align:center;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+ div.demo {
+        display:block;
+        width:100%;
+        margin:0 auto;
+    }
+    .logoright,
+    .followTitle,
+    .contact,
+    .follow,
+    .studio,{
+        width:300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .contact, .studio, .follow{
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    .followTitle{
+        padding-bottom: 20px;
+    }
+}
+/***********************/
+
+
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
