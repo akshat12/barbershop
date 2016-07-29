@@ -10,7 +10,7 @@
  */
 var module = angular
   .module('barbershopApp', [
-    'ngRoute'
+    'ngRoute', 'ngMap'
   ])
   .config(function ($routeProvider) {
     $routeProvider
