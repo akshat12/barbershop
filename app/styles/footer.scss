@@ -26,7 +26,7 @@
  
  @media screen and (min-width: 960px) {
      footer{
-         height:400px;
+         height:200px;
      }
      div.demo {
          display:table;
@@ -64,6 +64,11 @@
      .followTitle{
          padding-bottom: 20px;
      }
+ }
+ .footer-logo{
+    background-size:contain;
+    height:153px;
+    width:316px;
  }
  /***********************/
  
