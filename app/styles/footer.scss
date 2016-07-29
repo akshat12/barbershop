@@ -1,83 +1,69 @@
- /*navbar.scss - custom navbar styles*/
+// navbar.scss - custom navbar styles
 @import 'shared';
-
-footer {
-  background: lightgrey;
-  height: 11em;
-}
-
-.logo-footer {
-  background: url('/images/logo-black@0.5x.png');
-  background-repeat: no-repeat;
-}
+/*****************
+     FOOTER
+ *******************/
+ 
+ $grey: #f0efef;
 
 
-.navbar-brand-footer {
-  width: 315px;
-  position: absolute;
-  height: 300px;
-  transform: translateX(25%);
-}
-
-.navbar-brand-footer {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-$grey: #f0efef;
-footer{
-        background-image: url(../images/banner-background.png);
-        color: $grey;
-}
-$logowidth: 40px;
-.twitterLogo{
-        width:$logowidth;
-        padding-right:10px;
-}
-.facebookLogo{
-        width:$logowidth;
-        padding-right:10px;
-}
-
-
-@media screen and (min-width: 960px) {
-    footer{
-        height:400px;
-    }
-    div.demo {
-        display:table;
-        width:100%;
-        max-width:1400px;
-        margin:0 auto;
-    }
-    div.demo div {
-        display:table-cell;
-        text-align:center;
-    }
-}
-
-
-@media screen and (max-width: 960px) {
- div.demo {
-        display:block;
-        width:100%;
-        margin:0 auto;
-    }
-    .logoright,
-    .followTitle,
-    .contact,
-    .follow,
-    .studio,{
-        width:300px;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .contact, .studio, .follow{
-        padding-top:20px;
-        padding-bottom:20px;
-    }
-    .followTitle{
-        padding-bottom: 20px;
-    }
-}
+ footer{
+         background-image: url(../images/banner-background.png);
+         color: $grey;
+ }
+ $logowidth: 40px;
+ .twitterLogo{
+         width:$logowidth;
+         padding-right:10px;
+     color:white;
+ }
+ .facebookLogo{
+         width:$logowidth;
+         padding-right:10px;
+     color: white;
+ }
+ 
+ 
+ @media screen and (min-width: 960px) {
+     footer{
+         height:400px;
+     }
+     div.demo {
+         display:table;
+         width:100%;
+         max-width:1400px;
+         margin:0 auto;
+     }
+     div.demo div {
+         display:table-cell;
+         text-align:center;
+     }
+ }
+ 
+ 
+ @media screen and (max-width: 960px) {
+  div.demo {
+         display:block;
+         width:100%;
+         margin:0 auto;
+     }
+     .logoright,
+     .followTitle,
+     .contact,
+     .follow,
+     .studio,{
+         width:300px;
+         margin: 0 auto;
+         text-align: center;
+     }
+     
+     .contact, .studio, .follow{
+         padding-top:20px;
+         padding-bottom:20px;
+     }
+     .followTitle{
+         padding-bottom: 20px;
+     }
+ }
+ /***********************/
+ 
