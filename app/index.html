@@ -35,24 +35,30 @@
        ga('send', 'pageview');
     </script>
 
+
+    <!-- The google map api is currently on a cdn. This will still work, and also safe since it's under https, but a local copy would do as well -->
+    <script src="https://maps.googleapis.com/maps/api/js?API_KEY=AIzaSyBu_qbwVUR3l3I4e1VD-8p17OkZODoxgtw"></script>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/ngmap/build/scripts/ng-map.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/navbar.js"></script>
-        <script src="scripts/directives/bshoppillarbox.js"></script>
-        <script src="scripts/directives/bshopemailsubscribe.js"></script>
-        <script src="scripts/directives/bshophaircutschedule.js"></script>
-        <script src="scripts/directives/bshopfeatures.js"></script>
-        <script src="scripts/directives/bstrapjumbotron.js"></script>
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/navbar.js"></script>
+    <script src="scripts/directives/bshoppillarbox.js"></script>
+    <script src="scripts/directives/bshopemailsubscribe.js"></script>
+    <script src="scripts/directives/bshophaircutschedule.js"></script>
+    <script src="scripts/directives/bshopfeatures.js"></script>
+    <script src="scripts/directives/bstrapjumbotron.js"></script>
+    <script src="scripts/directives/bshopgeolocation.js"></script>
+
         <!-- endbuild -->
 </body>
 </html>
