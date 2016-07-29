@@ -9,40 +9,113 @@
 .flex-row {
     display: flex;
     flex-direction: row;
+}
+
+.space-between {
     justify-content: space-between;
+}
+
+.flex-center {
+    justify-content: center;
 }
 
 .navbar-left-flex {
     width: 33.3%;
-    justify-content: center;
 }
 
 .navbar-right-flex {
     width: 33.3%;
-    justify-content: center;
 }
 
 .navbar-center-flex {
     width: 33.4%;
-    justify-content: center;
 }
 
 .nav-item-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @extend .flex-column;
+    @extend .flex-center;
     margin: 10px;
-    > a {
-        color: map-get($colors, white);
-        text-transform: uppercase;
-        font-weight: 400;
-        font-size: 20px;
-        letter-spacing: 2px;
+}
+
+// Styling for links
+.navbar-container-flex a {
+    color: map-get($colors, white);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.navbar-mobile {
+    display: none;
+}
+
+// Styling for mobile
+@media (max-width: 768px) {
+    .navbar-desktop {
+        display: none;
+    }
+    .navbar-mobile {
+        display: block;
     }
 }
 
-@media (max-width: 768px) {
-    .navbar-container-flex {
-        display: none;
+.navbar-mobile-content {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: map-get($colors, black);
+    opacity: 0.97;
+}
+
+.circle {
+    border-radius: 50%;
+    // TOOD: change to map-get($colors, ...)
+    background-color: orange;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: 100;
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        > a {
+            font-size: 20px;
+        }
     }
+}
+
+.flex-row-mobile {
+    @extend .flex-row;
+    @extend .flex-center;
+    transition: top linear 1.5s;
+    margin-top: 150px;
+
+}
+
+.animate-show.ng-hide-add, .animate-show.ng-hide-remove {
+    transition: all linear 0.5s;
+}
+
+.flex-row-mobile .nav-item-flex {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flex-row-mobile a {
+    font-size: 35px;
 }

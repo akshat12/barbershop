@@ -1,25 +1,42 @@
 <link rel="stylesheet" href="styles/navbar.css">
-<div class="flex-row navbar-container-flex">
-    <div class="navbar-left-flex flex-row">
-        <div class="nav-item-flex">
-            <a ng-href="#/testimonials">Testimonials</a>
+<div ng-controller="NavbarCtrl" class="navbar-container-flex">
+    <div class="flex-row flex-center navbar-desktop">
+        <div class="navbar-left-flex flex-row flex-center">
+            <div class="nav-item-flex">
+                <a ng-href="#/testimonials">Testimonials</a>
+            </div>
+            <div class="nav-item-flex">
+                <a ng-href="#/location">Location</a>
+            </div>
         </div>
-        <div class="nav-item-flex">
-            <a ng-href="#/location">Location</a>
+        <div class="navbar-center-flex flex-row flex-center">
+            <img src="/images/logo.svg" />
         </div>
+        <div class="navbar-right-flex flex-row flex-center" bshop-icon-bar icon-container-class="nav-item-flex"></div>
     </div>
-    <div class="navbar-center-flex flex-row">
-        <img src="/images/logo.svg" />
-    </div>
-    <div class="navbar-right-flex flex-row">
-        <div class="nav-item-flex">
-            <a href="#"><span class="icon-twitter"></span></a>
-        </div>
-        <div class="nav-item-flex">
-            <a href="#"><span class="icon-facebook"></span></a>
-        </div>
-        <div class="nav-item-flex">
-            <a href="#"><span class="icon-tumblr"></span></a>
+    <div class="navbar-mobile">
+        <a class="circle" ng-click="slideDownNavbar()">
+            <div>
+                <span class="glyphicon"
+                    ng-class="{'glyphicon-remove': navbarOpen, 'glyphicon-menu-hamburger': !navbarOpen}">
+                </span>
+            </div>
+        </a>
+        <div class="navbar-mobile-content flex-column">
+            <div class="flex-row-mobile" bshop-icon-bar icon-container-class="nav-item-flex"></div>
+            <div class="flex-row-mobile">
+                <div class="flex-column text-center">
+                    <div class="nav-item-flex">
+                        <a ng-href="#/home">Home</a>
+                    </div>
+                    <div class="nav-item-flex">
+                        <a ng-href="#/testimonials">Testimonials</a>
+                    </div>
+                    <div class="nav-item-flex">
+                        <a ng-href="#/location">Location</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
