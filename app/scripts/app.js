@@ -12,7 +12,7 @@ var module = angular
   .module('barbershopApp', [
     'ngRoute', 'ngMap'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -22,6 +22,7 @@ var module = angular
       .otherwise({
         redirectTo: '/'
       });
+      $locationProvider.html5Mode(true);
   });
 
 module.constant('PartialsPath', '/scripts/directives/partials/');
