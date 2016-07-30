@@ -77,3 +77,12 @@ h4 {
     margin:10px;
     width:250px;
 }
+
+@mixin link-style() {
+    color: map-get($colors, white);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}

@@ -3,7 +3,7 @@
 /*****************
      FOOTER
  *******************/
- 
+
  $grey: #f0efef;
 
 
@@ -43,8 +43,8 @@
         width: 316px;
      }
  }
- 
- 
+
+
  @media screen and (max-width: 960px) {
   footer {
     padding-top:30px;
@@ -62,8 +62,9 @@
          width:300px;
          margin: 0 auto;
          text-align: center;
+
      }
-     
+
      .contact, .studio, .follow{
          padding-top:20px;
          padding-bottom:20px;
@@ -71,6 +72,17 @@
      .followTitle{
          padding-bottom: 20px;
      }
+ }
+
+ #footer-icon-bar-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    .icon-link a {
+        @include link-style;
+    }
  }
 
  .footer-logo{
@@ -81,4 +93,3 @@
  }
 
  /***********************/
- 

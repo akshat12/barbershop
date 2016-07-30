@@ -45,11 +45,7 @@
 
 // Styling for links
 .navbar-container-flex a {
-    color: map-get($colors, white);
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 20px;
-    letter-spacing: 2px;
+    @include link-style();
 }
 
 .navbar-mobile {
