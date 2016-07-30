@@ -8,22 +8,21 @@
 
 
  footer{
-         background-image: url(../images/banner-background.png);
-         color: $grey;
+     background-image: url(../images/banner-background.png);
+     color: $grey;
  }
  $logowidth: 40px;
- .twitterLogo{
-         width:$logowidth;
-         padding-right:10px;
+ .socialLogo{
+     width:$logowidth;
      color:white;
+     padding:0 10px;
  }
- .facebookLogo{
-         width:$logowidth;
-         padding-right:10px;
-     color: white;
+ .socialLogo:hover{
+    color:white;
+    text-decoration:none;
+    cursor:pointer;
  }
- 
- 
+
  @media screen and (min-width: 960px) {
      footer{
          height:290px;
