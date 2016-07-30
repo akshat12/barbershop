@@ -81,8 +81,7 @@
 
 .circle {
     border-radius: 50%;
-    // TOOD: change to map-get($colors, ...)
-    background-color: orange;
+    background-color: map-get($colors, primary);;
     height: 80px;
     width: 80px;
     display: flex;
@@ -109,11 +108,11 @@
     @extend .flex-row;
     @extend .flex-center;
     transition: top linear 1.5s;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
-.animate-show.ng-hide-add, .animate-show.ng-hide-remove {
-    transition: all linear 0.5s;
+.navbar-mobile-content .icon-bar-mobile {
+    margin-top: 150px;
 }
 
 .flex-row-mobile .nav-item-flex {
