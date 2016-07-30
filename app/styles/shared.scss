@@ -45,16 +45,6 @@ h4 {
     color: map-get($colors, grey);
 }
 
-// Navbar links
-.navbar-default .navbar-nav > li > a {
-    color: map-get($colors, white);
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 20px;
-    letter-spacing: 2px;
-
-}
-
 .default-button {
     color:map-get($colors,white);
     background-color: map-get($colors, primary);
@@ -78,7 +68,7 @@ h4 {
     display:inline-block;
     padding-left: 30px;
     height: 3.3em;
-    background-color: map-get($colors, white); 
+    background-color: map-get($colors, white);
     border-radius: 40px;
     font-family:Lato, sans-serif;
     color: map-get($colors, grey);

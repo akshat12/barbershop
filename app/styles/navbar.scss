@@ -1,124 +1,127 @@
 // navbar.scss - custom navbar styles
 @import 'shared';
 
-.logo {
-    background: url('/images/logo.svg')
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.navbar-brand {
-  width: 215px;
-  transform: translateX(-50%);
-  left: 50%;
-  position: absolute;
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.navbar-brand,
-.navbar-nav > li > a {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    line-height: 175px;
+.space-between {
+    justify-content: space-between;
 }
 
-.navbar-brand {
+.flex-center {
+    justify-content: center;
+}
+
+.navbar-left-flex {
+    width: 33.3%;
+}
+
+.navbar-right-flex {
+    width: 33.3%;
+}
+
+.navbar-desktop .navbar-center-flex {
+    width: 33.4%;
+}
+
+.nav-item-flex {
+    @extend .flex-column;
+    @extend .flex-center;
+    margin: 10px;
+}
+
+.navbar-container-flex {
+    padding: 20px;
+}
+
+// Styling for links
+.navbar-container-flex a {
+    color: map-get($colors, white);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.navbar-mobile {
+    display: none;
+}
+
+// Styling for mobile
+@media (max-width: 768px) {
+    .navbar-desktop {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: block;
+    }
+}
+
+.navbar-mobile-content {
+    display: none;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
     height: 100%;
+    z-index: 99;
+    background-color: map-get($colors, black);
+    opacity: 0.97;
 }
 
+.circle {
+    border-radius: 50%;
+    background-color: map-get($colors, primary);;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: 100;
 
-@media (max-width: 767px) {
-    .navbar-nav > li > a {
-        line-height: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-}
+    > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-$bgDefault: rgba(0, 0, 0, 0.0);
-$bgHighlight: rgba(0, 0, 0, 0.0);
-$colDefault: map-get($colors, white);
-$colHighlight: map-get($colors, white);
-
-.navbar-default {
-  background-color: $bgDefault;
-  border-color: $bgHighlight;
-
-    .navbar-brand {
-        color: $colDefault;
-
-        &:hover, &:focus {
-          color: $colHighlight;
-        }
-    }
-
-    .navbar-text {
-        color: $colDefault;
-    }
-
-    .navbar-nav {
-        > li {
-            > a {
-                color: $colDefault;
-                font-family: $font-stack;
-                    &:hover,  &:focus {
-                        color: $colHighlight;
-                    }
-                }
-            }
-        > .active {
-            > a, > a:hover, > a:focus {
-                color: $colHighlight;
-                font-family: $font-stack;
-                background-color: $bgHighlight;
-            }
-        }
-        > .open {
-            > a, > a:hover, > a:focus {
-                color: $colHighlight;
-                font-family: $font-stack;
-                background-color: $bgHighlight;
-            }
-        }
-    }
-
-    .navbar-toggle {
-        border-color: $bgHighlight;
-
-        &:hover, &:focus {
-            background-color: $bgHighlight;
-        }
-
-        .icon-bar {
-            background-color: $colDefault;
-        }
-    }
-
-    .navbar-collapse, .navbar-form {
-        border-color: $colDefault;
-    }
-
-    .navbar-link {
-        color: $colDefault;
-
-        &:hover {
-        color: $colHighlight;
+        > a {
+            font-size: 20px;
         }
     }
 }
 
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu {
-        > li > a {
-            color: $colDefault;
+.flex-row-mobile {
+    @extend .flex-row;
+    @extend .flex-center;
+    transition: top linear 1.5s;
+    margin-top: 50px;
+}
 
-            &:hover, &:focus {
-                color: $colHighlight;
-            }
-        }
+.navbar-mobile-content .icon-bar-mobile {
+    margin-top: 150px;
+}
 
-        > .active {
-            > a, > a:hover, > a:focus, {
-                color: $colHighlight;
-                background-color: $bgHighlight;
-            }
-        }
-    }
+.flex-row-mobile .nav-item-flex {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flex-row-mobile a {
+    font-size: 35px;
 }
