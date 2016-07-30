@@ -26,7 +26,9 @@
  
  @media screen and (min-width: 960px) {
      footer{
-         height:200px;
+         height:290px;
+         padding-top:60px;
+         padding-left:20px;
      }
      div.demo {
          display:table;
@@ -38,10 +40,16 @@
          display:table-cell;
          text-align:center;
      }
+     .demo .logoright .copyright{
+        width: 316px;
+     }
  }
  
  
  @media screen and (max-width: 960px) {
+  footer {
+    padding-top:30px;
+  }
   div.demo {
          display:block;
          width:100%;
@@ -65,10 +73,13 @@
          padding-bottom: 20px;
      }
  }
+
  .footer-logo{
-    background-size:contain;
-    height:153px;
-    width:316px;
+    background: url('/images/logo-white@0.5x.png');
+    background-size: contain;
+    height: 153px;
+    width: 316px;
  }
+
  /***********************/
  
