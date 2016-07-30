@@ -1,20 +1,17 @@
 <link rel="stylesheet" href="styles/navbar.css">
 <div ng-controller="NavbarCtrl" class="navbar-container-flex">
     <div class="flex-row flex-center navbar-desktop">
-        <div class="navbar-left-flex flex-row flex-center">
-            <div class="nav-item-flex">
-                <a ng-href="#/testimonials">Testimonials</a>
-            </div>
-            <div class="nav-item-flex">
-                <a ng-href="#/location">Location</a>
-            </div>
+        <div class="navbar-left-flex flex-row flex-center" bshop-link-bar icon-container-class="nav-item-flex" include-home="false">
         </div>
         <div class="navbar-center-flex flex-row flex-center">
-            <img src="/images/logo.svg" />
+            <img src="/images/logo.png" />
         </div>
         <div class="navbar-right-flex flex-row flex-center" bshop-icon-bar icon-container-class="nav-item-flex"></div>
     </div>
     <div class="navbar-mobile">
+        <div class="navbar-center-flex flex-row flex-center">
+            <img src="/images/logo.png" />
+        </div>
         <a class="circle" ng-click="slideDownNavbar()">
             <div>
                 <span class="glyphicon"
@@ -25,16 +22,7 @@
         <div class="navbar-mobile-content flex-column">
             <div class="flex-row-mobile" bshop-icon-bar icon-container-class="nav-item-flex"></div>
             <div class="flex-row-mobile">
-                <div class="flex-column text-center">
-                    <div class="nav-item-flex">
-                        <a ng-href="#/home">Home</a>
-                    </div>
-                    <div class="nav-item-flex">
-                        <a ng-href="#/testimonials">Testimonials</a>
-                    </div>
-                    <div class="nav-item-flex">
-                        <a ng-href="#/location">Location</a>
-                    </div>
+                <div class="flex-column text-center" bshop-link-bar icon-container-class="nav-item-flex" include-home="true">
                 </div>
             </div>
         </div>

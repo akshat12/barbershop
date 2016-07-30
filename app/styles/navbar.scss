@@ -27,7 +27,7 @@
     width: 33.3%;
 }
 
-.navbar-center-flex {
+.navbar-desktop .navbar-center-flex {
     width: 33.4%;
 }
 
@@ -35,6 +35,10 @@
     @extend .flex-column;
     @extend .flex-center;
     margin: 10px;
+}
+
+.navbar-container-flex {
+    padding: 20px;
 }
 
 // Styling for links

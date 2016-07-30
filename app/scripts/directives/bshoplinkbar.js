@@ -14,14 +14,11 @@ angular.module('barbershopApp')
       controllerAs: 'ctrl',
       bindToController: true,
       scope: {
-      	iconContainerClass: '@'
+      	iconContainerClass: '@',
+        includeHome: '='
       },
       controller: function() {
       	this.links = [
-	      	{
-      			text: 'Home',
-      			link: 'home'
-      		},
       		{
       			text: 'Testimonials',
       			link: 'testimonials'
@@ -31,6 +28,12 @@ angular.module('barbershopApp')
       			link: 'contact'
       		}
       	];
+        if (this.includeHome) {
+          this.links.unshift({
+            text: 'Home',
+            link: 'home'
+          });
+        }
       }
     };
   });
