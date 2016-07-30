@@ -1,46 +1,46 @@
 @font-face {
-    font-family: 'barbershop-icons';
-    src: url('../icons/barbershop_icons.eot?qswbrw');
-    src: url('../icons/barbershop_icons.eot?qswbrw#iefix') format('embedded-opentype'),
-        url('../icons/barbershop_icons.ttf?qswbrw') format('truetype'),
-        url('../icons/barbershop_icons.woff?qswbrw') format('woff'),
-        url('../icons/barbershop_icons.svg?qswbrw#barbershop_icons') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'barbershop-icons';
+  src: url('../icons/barbershop_icons.eot?qswbrw');
+  src: url('../icons/barbershop_icons.eot?qswbrw#iefix') format('embedded-opentype'),
+    url('../icons/barbershop_icons.ttf?qswbrw') format('truetype'),
+    url('../icons/barbershop_icons.woff?qswbrw') format('woff'),
+    url('../icons/barbershop_icons.svg?qswbrw#barbershop_icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'barbershop-icons' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'barbershop-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-facebook:before {
-    content: "\e900";
+  content: "\e900";
 }
 .icon-feature1:before {
-    content: "\e901";
+  content: "\e901";
 }
 .icon-feature2:before {
-    content: "\e902";
+  content: "\e902";
 }
 .icon-feature3:before {
-    content: "\e903";
+  content: "\e903";
 }
 .icon-tumblr:before {
-    content: "\e904";
+  content: "\e904";
 }
 .icon-twitter:before {
-    content: "\e905";
+  content: "\e905";
 }
 
 
