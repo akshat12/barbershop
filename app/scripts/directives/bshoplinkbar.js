@@ -20,10 +20,6 @@ angular.module('barbershopApp')
       controller: function() {
       	this.links = [
       		{
-      			text: 'Testimonials',
-      			link: 'testimonials'
-      		},
-      		{
       			text: 'Contact',
       			link: 'contact'
       		}
