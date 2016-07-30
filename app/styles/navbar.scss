@@ -55,12 +55,14 @@
     .navbar-desktop {
         display: none;
     }
+
     .navbar-mobile {
         display: block;
     }
 }
 
 .navbar-mobile-content {
+    display: none;
     position: fixed;
     top: 0px;
     right: 0px;
@@ -102,7 +104,6 @@
     @extend .flex-center;
     transition: top linear 1.5s;
     margin-top: 150px;
-
 }
 
 .animate-show.ng-hide-add, .animate-show.ng-hide-remove {

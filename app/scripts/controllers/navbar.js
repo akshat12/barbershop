@@ -10,14 +10,13 @@
 var DURATION = 700;
 
 function NavbarCtrl($scope, $element) {
-	$scope.navbarOpen = false;
-	var $navbarMobile = $element.find('.navbar-mobile-content');
+    $scope.navbarOpen = false;
+    var $navbarMobile = $element.find('.navbar-mobile-content');
 
-	$scope.slideDownNavbar = function() {
-		$navbarMobile.slideToggle(DURATION, function() {
-			$scope.navbarOpen = !$scope.navbarOpen
-		});
-	};
+    $scope.slideDownNavbar = function() {
+        $scope.navbarOpen = !$scope.navbarOpen;
+        $navbarMobile.slideToggle(DURATION);
+    };
 }
 
 angular.module('barbershopApp').controller('NavbarCtrl', NavbarCtrl);
