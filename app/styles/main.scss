@@ -105,6 +105,11 @@ body {
   padding-right: 5%;
 }
 
+.haircut-schedule{
+  padding-top: 4.5em;
+  padding-bottom:4.5em;
+}
+
 /* Email subscribe css */
 .email-text {
   color: #f3f3f3;
@@ -151,6 +156,11 @@ body {
   color: #f3f3f3;
 }
 
+.haircut-schedule.text-center > h5 {
+  padding-top: 15px;
+  font-weight: 200;
+}
+
 /* End of email subscribe css */
 
 /* Pillar box CSS */
@@ -160,6 +170,8 @@ body {
 }
 .pillar-row {
   padding-top: 15px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 .icon {
   color: inherit;
@@ -189,18 +201,50 @@ body {
 
 
 .pillar-box-column {
-  width: 23.3333%;
+  width: 33.3333%;
   float: left;
   height: 150px;
 }
 
-.pillar-box-column:first-of-type {
-  margin-left: 15%;
+
+@media (max-width: 875px) {
+  .pillar-box-column {
+    height: 215px;
+  }
 }
 
-.pillar-box-column:last-child {
-  margin:0;
+@media(min-width: 699px) {
+  .pillar-box-column {
+    // max-width: 300px;
+  }
 }
+
+/* Mobile responsive pillar CSS */
+@media (max-width: 698px) {
+  .icon {
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .pillar-row {
+    display: inline;
+  }
+  .pillar-box-column {
+    padding-top: 20px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    float: left;
+  }
+  .pillar-box {
+    text-align: center;
+    vertical-align: middle;
+    color: #f3f3f3;
+  }
+  .pillar-box:hover {
+    border-bottom: none;
+  }
+}
+/* End of Mobile responsive pillar css */
 
 /* End of Pillar box CSS */
-

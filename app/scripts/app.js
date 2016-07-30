@@ -10,7 +10,7 @@
  */
 var module = angular
   .module('barbershopApp', [
-    'ngRoute'
+    'ngRoute', 'ngMap'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -25,3 +25,5 @@ var module = angular
   });
 
 module.constant('PartialsPath', '/scripts/directives/partials/');
+
+module.constant('HaircutScheduleURL', 'https://eastvillagebarbershop.perfectmind.com/22867/Contacts/BookMe4?widgetId=fb596abb-e1eb-4c17-b417-03d57409a0ee&embed=true');

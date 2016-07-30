@@ -44,3 +44,36 @@ h4 {
     letter-spacing: 2px;
     color: map-get($colors, grey);
 }
+
+.default-button {
+    color:map-get($colors,white);
+    background-color: map-get($colors, primary);
+    text-transform: uppercase;
+    border-radius: 40px;
+    box-shadow: 0px 15px 15px rgba(0,0,0,.20);
+    font-family:Lato, sans-serif;
+    font-size:16px;
+    letter-spacing: 2px;
+    font-weight:bold;
+    height: 3.3em;
+    margin:10px;
+    width:250px;
+}
+
+.default-button:hover{
+    color:map-get($colors,white);
+}
+
+.default-input[type=text]{
+    display:inline-block;
+    padding-left: 30px;
+    height: 3.3em;
+    background-color: map-get($colors, white);
+    border-radius: 40px;
+    font-family:Lato, sans-serif;
+    color: map-get($colors, grey);
+    font-size:16px;
+    border:none;
+    margin:10px;
+    width:250px;
+}
