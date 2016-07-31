@@ -83,6 +83,10 @@
     .icon-link a {
         @include link-style;
     }
+    .icon-link {
+        padding-left: 6.5px;
+        padding-right: 6.5px;
+    }
  }
 
  .footer-logo{
@@ -95,5 +99,6 @@
  .copyright {
     padding-top: 15px;
  }
+
 
  /***********************/
