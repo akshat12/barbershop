@@ -12,7 +12,9 @@ Running `grunt test` will run the unit tests with karma.
 
 ## Install
 
-Run 'npm install' && 'bower install'
+Run `gem install compass`
+
+Run `npm install` && `bower install`
 
 Yeoman API:
 
