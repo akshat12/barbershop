@@ -1,0 +1,104 @@
+// navbar.scss - custom navbar styles
+@import 'shared';
+/*****************
+     FOOTER
+ *******************/
+
+ $grey: #f0efef;
+
+
+ footer{
+     background-image: url(../images/banner-background.png);
+     color: $grey;
+ }
+ $logowidth: 40px;
+ .socialLogo{
+     width:$logowidth;
+     color:white;
+     padding:0 10px;
+     &:hover{
+        color:white;
+        text-decoration:none;
+        cursor:pointer;
+     }
+ }
+
+ @media screen and (min-width: 960px) {
+     footer{
+         height:290px;
+         padding-top:60px;
+         padding-left:20px;
+     }
+     div.demo {
+         display:table;
+         width:100%;
+         max-width:1400px;
+         margin:0 auto;
+     }
+     div.demo div {
+         display:table-cell;
+         text-align:center;
+     }
+     .demo .logoright .copyright{
+        width: 316px;
+     }
+ }
+
+
+ @media screen and (max-width: 960px) {
+  footer {
+    padding-top:30px;
+  }
+  div.demo {
+         display:block;
+         width:100%;
+         margin:0 auto;
+     }
+     .logoright,
+     .followTitle,
+     .contact,
+     .follow,
+     .studio,{
+         width:300px;
+         margin: 0 auto;
+         text-align: center;
+
+     }
+
+     .contact, .studio, .follow{
+         padding-top:20px;
+         padding-bottom:20px;
+     }
+     .followTitle{
+         padding-bottom: 20px;
+     }
+ }
+
+ #footer-icon-bar-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    .icon-link a {
+        @include link-style;
+    }
+    .icon-link {
+        padding-left: 6.5px;
+        padding-right: 6.5px;
+    }
+ }
+
+ .footer-logo{
+    background: url('/images/logo.png');
+    background-size: contain;
+    height: 153px;
+    width: 316px;
+ }
+
+ .copyright {
+    padding-top: 15px;
+ }
+
+
+ /***********************/

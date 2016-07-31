@@ -7,11 +7,8 @@
  * # MainCtrl
  * Controller of the barbershopApp
  */
-angular.module('barbershopApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+
+function MainCtrl($scope) {
+}
+
+angular.module('barbershopApp').controller('MainCtrl', MainCtrl);

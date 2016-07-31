@@ -8,11 +8,11 @@
  *
  * Main module of the application.
  */
-angular
+var module = angular
   .module('barbershopApp', [
-    'ngRoute'
+    'ngRoute', 'ngMap'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -22,4 +22,9 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+      $locationProvider.html5Mode(true);
   });
+
+module.constant('PartialsPath', '/scripts/directives/partials/');
+
+module.constant('HaircutScheduleURL', 'https://eastvillagebarbershop.perfectmind.com/22867/Contacts/BookMe4?widgetId=fb596abb-e1eb-4c17-b417-03d57409a0ee&embed=true');
