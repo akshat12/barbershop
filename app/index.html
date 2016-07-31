@@ -2,10 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <base href="/">
+    <title>East Village Barbershop</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="icon" type="image/x-icon" href="images/favicons/favicon.ico" />
+    <link rel="icon" type="image/png" href="images/favicons/apple-touch-icon.png" />
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
@@ -20,46 +23,12 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <a class="navbar-brand" href="#/">barbershop</a>
-          </div>
-
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
-
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <div class="container-fluid">
+      <div ng-view=""></div>
     </div>
-
-    <div class="container">
-    <div ng-view=""></div>
-    </div>
-
-    <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
-    </div>
-
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
+    <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
        (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
        r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
@@ -69,18 +38,31 @@
        ga('send', 'pageview');
     </script>
 
+
+    <!-- The google map api is currently on a cdn. This will still work, and also safe since it's under https, but a local copy would do as well -->
+    <script src="https://maps.googleapis.com/maps/api/js?API_KEY=AIzaSyBu_qbwVUR3l3I4e1VD-8p17OkZODoxgtw"></script>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/ngmap/build/scripts/ng-map.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/navbar.js"></script>
+    <script src="scripts/directives/bshoppillarbox.js"></script>
+    <script src="scripts/directives/bshophaircutschedule.js"></script>
+    <script src="scripts/directives/bshopfeatures.js"></script>
+    <script src="scripts/directives/bstrapjumbotron.js"></script>
+    <script src="scripts/directives/bshopgeolocation.js"></script>
+    <script src="scripts/directives/bshopiconbar.js"></script>
+    <script src="scripts/directives/bshoplinkbar.js"></script>
+    <!-- endbuild -->
+
 </body>
 </html>

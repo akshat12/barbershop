@@ -1,0 +1,126 @@
+// navbar.scss - custom navbar styles
+@import 'shared';
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.navbar-left-flex {
+    width: 33.3%;
+}
+
+.navbar-right-flex {
+    width: 33.3%;
+}
+
+.navbar-desktop .navbar-center-flex {
+    width: 33.4%;
+}
+
+.nav-item-flex {
+    @extend .flex-column;
+    @extend .flex-center;
+    margin: 10px;
+}
+
+.navbar-container-flex {
+    padding: 20px;
+}
+
+// Styling for links
+.navbar-container-flex a {
+    @include link-style();
+}
+
+.navbar-mobile {
+    display: none;
+}
+
+// Styling for mobile
+@media (max-width: 768px) {
+    .navbar-desktop {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: block;
+    }
+}
+
+.navbar-mobile-content {
+    display: none;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: map-get($colors, black);
+    opacity: 0.97;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: map-get($colors, primary);;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    z-index: 100;
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        > a {
+            font-size: 20px;
+        }
+    }
+    &:hover {
+        text-decoration:none;
+    }
+}
+
+.flex-row-mobile {
+    @extend .flex-row;
+    @extend .flex-center;
+    transition: top linear 1.5s;
+    margin-top: 50px;
+}
+
+.navbar-mobile-content .icon-bar-mobile {
+    margin-top: 150px;
+}
+
+.flex-row-mobile .nav-item-flex {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flex-row-mobile a {
+    font-size: 35px;
+}
