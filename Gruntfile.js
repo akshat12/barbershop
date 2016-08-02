@@ -8,16 +8,7 @@
 // 'test/spec/**/*.js'
 
 module.exports = function (grunt) {
-
-  // Time how long tasks take. Can help when optimizing build times
-  require('time-grunt')(grunt);
-
-  // Automatically load required Grunt tasks
-  require('jit-grunt')(grunt, {
-    useminPrepare: 'grunt-usemin',
-    ngtemplates: 'grunt-angular-templates',
-    cdnify: 'grunt-google-cdn'
-  });
+  require('load-grunt-tasks')(grunt);
 
   // Configurable paths for the application
   var appConfig = {
@@ -163,7 +154,11 @@ module.exports = function (grunt) {
           src: [
             '.tmp',
             '<%= yeoman.dist %>/{,*/}*',
-            '!<%= yeoman.dist %>/.git{,*/}*'
+            '!<%= yeoman.dist %>/.git{,*/}*',
+            '!<%= yeoman.dist %>/package.json',
+            '!<%= yeoman.dist %>/index.js',
+            '!<%= yeoman.dist %>/Procfile',
+            '!<%= yeoman.dist %>/node_modules'
           ]
         }]
       },
@@ -224,7 +219,7 @@ module.exports = function (grunt) {
         src: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
         ignorePath: /(\.\.\/){1,2}bower_components\//
       }
-    }, 
+    },
 
     // Compiles Sass to CSS and generates necessary files if requested
     compass: {
@@ -288,7 +283,7 @@ module.exports = function (grunt) {
 
     // Performs rewrites based on filerev and the useminPrepare configuration
     usemin: {
-      html: ['<%= yeoman.dist %>/{,*/}*.html'],
+      html: ['<%= yeoman.dist %>/**/*.html'],
       css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
       js: ['<%= yeoman.dist %>/scripts/{,*/}*.js'],
       options: {
@@ -362,7 +357,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.dist %>',
-          src: ['*.html'],
+          src: ['**/*.html'],
           dest: '<%= yeoman.dist %>'
         }]
       }
@@ -411,9 +406,10 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.dist %>',
           src: [
             '*.{ico,png,txt}',
-            '*.html',
+            '**/*.html',
+            'styles/**/*.css',
             'images/{,*/}*.{webp}',
-            'styles/fonts/{,*/}*.*'
+            'icons/{,*/}*.*'
           ]
         }, {
           expand: true,
@@ -425,6 +421,11 @@ module.exports = function (grunt) {
           cwd: '.',
           src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
           dest: '<%= yeoman.dist %>'
+        }, {
+          expand: true,
+          cwd: '.tmp/styles/',
+          dest: '<%= yeoman.dist %>/styles',
+          src: ['*.css']
         }]
       },
       styles: {
@@ -455,6 +456,20 @@ module.exports = function (grunt) {
       unit: {
         configFile: 'test/karma.conf.js',
         singleRun: true
+      }
+    },
+    buildcontrol: {
+      options: {
+          dir: 'dist',
+          commit: true,
+          push: true,
+          message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+      },
+      heroku: {
+          options: {
+              remote: 'https://git.heroku.com/eastvanbarbershop.git',
+              branch: 'master'
+          }
       }
     }
   });
@@ -513,4 +528,7 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  // TODO: Add newer:dist here?
+  grunt.registerTask('deploy', ['buildcontrol']);
 };
