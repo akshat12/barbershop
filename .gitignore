@@ -1,5 +1,8 @@
 /node_modules
-/dist
+/dist/*
+!/dist/Procfile
+!/dist/index.js
+!/dist/package.json
 /.tmp
 /.sass-cache
 /bower_components
