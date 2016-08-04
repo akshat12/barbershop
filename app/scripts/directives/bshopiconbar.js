@@ -20,7 +20,7 @@ angular.module('barbershopApp')
       	this.social = [
       		{
       			icon: 'facebook',
-      			link: 'facebook'
+      			link: 'https://www.facebook.com/East-Village-Barbershop-521982801344259/'
       		},
       		{
       			icon: 'twitter',
